@@ -39,6 +39,7 @@ function App() {
       <Route path='/' element={<RootLayout onSearch={onSearch}/>} errorElement={<ErrorPage/>}>
   
           <Route index element={<Home/>} loader={LoadMovies}/>
+          <Route path="iMovies" element={<Home/>} loader={LoadMovies}/>
           <Route path={name} element={<AboutMovie/>} loader={LoadMovies}/>
           
   
