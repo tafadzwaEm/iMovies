@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/iMovies/static/css/main.24379aef.css",
-    "main.js": "/iMovies/static/js/main.595ddd19.js",
+    "main.js": "/iMovies/static/js/main.695a8345.js",
     "index.html": "/iMovies/index.html",
     "main.24379aef.css.map": "/iMovies/static/css/main.24379aef.css.map",
-    "main.595ddd19.js.map": "/iMovies/static/js/main.595ddd19.js.map"
+    "main.695a8345.js.map": "/iMovies/static/js/main.695a8345.js.map"
   },
   "entrypoints": [
     "static/css/main.24379aef.css",
-    "static/js/main.595ddd19.js"
+    "static/js/main.695a8345.js"
   ]
 }
