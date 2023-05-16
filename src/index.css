@@ -133,3 +133,11 @@ body {
 .rating h3{
   color: var(--secondary);
 }
+
+.links{
+  color: #61dafb;
+}
+
+.links a{
+  color: #61dafb;
+}

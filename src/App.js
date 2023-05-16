@@ -1,4 +1,4 @@
-import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements, redirect} from 'react-router-dom';
+import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements} from 'react-router-dom';
 import './index.css';
 // Layouts
 import RootLayout from './layouts/RootLayout';
@@ -7,7 +7,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import AboutMovie from './pages/AboutMovie';
 import ErrorPage from './pages/ErrorPage';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 
 function App() {
@@ -36,10 +36,10 @@ function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
       // Root route
-      <Route path='/' element={<RootLayout onSearch={onSearch}/>} errorElement={<ErrorPage/>}>
+      <Route path='/iMovies' element={<RootLayout onSearch={onSearch}/>} errorElement={<ErrorPage/>}>
   
           <Route index element={<Home/>} loader={LoadMovies}/>
-          <Route path="iMovies" element={<Home/>} loader={LoadMovies}/>
+          {/* <Route path="iMovies" element={<Home/>} loader={LoadMovies}/> */}
           <Route path={name} element={<AboutMovie/>} loader={LoadMovies}/>
           
   

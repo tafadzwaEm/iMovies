@@ -28,7 +28,7 @@ const RootLayout = ({onSearch}) => {
             />
 
             <div className="nav-links">
-                <NavLink to='iMovies'>Home</NavLink>
+                <NavLink to='/iMovies'>Home</NavLink>
                 <NavLink to='about'>About</NavLink>
             </div>
         </nav>

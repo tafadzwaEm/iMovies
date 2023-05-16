@@ -4,7 +4,12 @@ const About = () => {
   return (
     <div>
         <h2>About iMovies4u</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat saepe sunt reprehenderit vero dignissimos libero aut. Reprehenderit, in fugiat. Amet eligendi debitis tempore nihil repellendus totam, rerum quasi quia illo?</p>
+        <p>A web application built with React.js that allows users to search for movies and view detailed information about them. The application fetches movie data from the Open Movie Database (OMDB) API and presents it in a user-friendly interface.</p>
+        <small className='links'>
+          Created by:  Emmanuel Tafadzwa Mukombero <br />
+          <span style={{color: "white"}}>Check my Github </span>
+          <a href="https://github.com/tafadzwaEm" target='_blank'>Here</a>
+        </small>
     </div>
   )
 }
