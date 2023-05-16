@@ -7,7 +7,7 @@ const ErrorPage = () => {
     <div>
         <h1>Error!</h1>
         <h3>{error.message}</h3>
-        Back to <Link style={{color:'lightblue'}} to='/'>Homepage</Link>
+        Back to <Link style={{color:'lightblue'}} to='iMovies'>Homepage</Link>
     </div>
   )
 }
