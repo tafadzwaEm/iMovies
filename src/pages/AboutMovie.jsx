@@ -26,7 +26,7 @@ const AboutMovie = () => {
         </div>
 
         <div className="poster">
-          <img src={movie.Poster} alt='' />
+          <img src={movie.Poster} alt='Could not load image' />
         </div>
     </div>
   )

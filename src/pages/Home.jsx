@@ -7,7 +7,7 @@ const Home = () => {
     <div className="display-movies">
 
           <div className="movie-card">
-              <img src={movies.Poster} alt=""/>
+              <img src={movies.Poster} alt="Could not load image"/>
               <div className="short-details">
                 <h3>{movies.Title}</h3>
                 <p>{movies.Plot}</p>
