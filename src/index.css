@@ -1,13 +1,135 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root{
+  --primary: #282c34; 
+  --secondary: #61dafb;
+  --tertiary: #bc4123;
+  --quaternary: #2b3452;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+body {
+  margin: 0;
+  font-family: 'Poppins';
+  padding: 25px 50px;
+  background: rgb(2, 3, 27);
+  color: white;
+}
+
+.root-layout header nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.root-layout header nav h2{
+    font-size: 35px;
+}
+
+.root-layout input{
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  width: 450px;
+  background: rgba(248, 248, 248, 0.237);
+  color: antiquewhite;
+}
+
+.root-layout input:focus{
+  border-bottom: 3px solid var(--secondary);
+}
+
+.nav-links a{
+  color: var(--secondary);
+  text-decoration: none;
+  font-size: 19px;
+  margin: 0 5px;
+} 
+
+.nav-links a.active{
+  color: var(--tertiary);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+} 
+
+.display-movies{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 50px;
+}
+
+.movie-card{
+  flex-direction: row;
+  display: flex;
+}
+
+.movie-card img{
+  border-radius: 5px;
+  margin-right: 60px;
+  box-shadow: 1px 1px 0 1px var(--secondary);
+}
+
+.movie-card h3{
+  font-size: 35px;
+  max-width: 550px;
+  padding-bottom: 10px;
+  border-bottom: 5px solid var(--tertiary)
+}
+
+.movie-card p{
+  font-size: 20px;
+  max-width: 550px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.movie-card small{
+  display: block;
+  margin-bottom: 50px;
+}
+
+.short-details a{
+  text-decoration: none;
+  color: var(--secondary)
+}
+
+
+.movie-details{
+  display: flex;
+  flex-direction: row;
+  max-width: 1150px;
+  margin: 50px auto;
+}
+
+.details-small{
+  color: lightgray;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15px;
+}
+.movie-short-details{
+  margin-right: 20px;
+}
+.movie-short-details h2{
+  font-size: 35px;
+}
+
+.plot{
+  font-size: 20px;
+}
+
+.ratings{
+  display: flex;
+  flex-direction: row;
+}
+
+.rating{
+  margin: 0 20px 0 0;
+}
+.rating h3{
+  color: var(--secondary);
 }
